@@ -7,7 +7,6 @@ env:
   SCCACHE_GHA_ENABLED: 'true'
   ANDROID_NDK_VERSION: r27d
   ANDROID_TARGET_SDK_VERSION: 24
-  LDFLAGS: '-Wl,-z,max-page-size=16384'
 
 permissions:
   contents: read
@@ -25,6 +24,7 @@ jobs:
     runs-on: ${{ matrix.config.os }}
     env:
       TARGET_ARCH: ${{ matrix.config.target_arch }}
+      LDFLAGS: '-Wl,-z,max-page-size=16384'
 
     steps:
       - uses: actions/checkout@v4
