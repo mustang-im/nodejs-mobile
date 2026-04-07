@@ -63,7 +63,7 @@ build_for_arm64_device() {
   ./configure \
     --dest-os=ios \
     --dest-cpu=arm64 \
-    --with-intl=none \
+    --with-intl=small-icu \
     --cross-compiling \
     --enable-static \
     --openssl-no-asm \
@@ -86,7 +86,7 @@ build_for_arm64_simulator() {
   ./configure \
     --dest-os=ios \
     --dest-cpu=arm64 \
-    --with-intl=none \
+    --with-intl=small-icu \
     --cross-compiling \
     --enable-static \
     --openssl-no-asm \
@@ -110,7 +110,7 @@ build_for_x64_simulator() {
   ./configure \
     --dest-os=ios \
     --dest-cpu=x64 \
-    --with-intl=none \
+    --with-intl=small-icu \
     --cross-compiling \
     --enable-static \
     --openssl-no-asm \
