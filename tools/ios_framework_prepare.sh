@@ -24,6 +24,7 @@ declare -a outputs_common=(
   "libgtest.a"
   "libgtest_main.a"
   "libhistogram.a"
+  "libicudata.a"
   "libcrdtp.a"
   "libllhttp.a"
   "libnbytes.a"
