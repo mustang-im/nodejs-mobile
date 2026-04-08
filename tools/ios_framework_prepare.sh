@@ -69,7 +69,7 @@ build_for_arm64_device() {
     --cross-compiling \
     --enable-static \
     --openssl-no-asm \
-    --v8-options=--jitless \
+    --v8-options='--jitless --noexpose-wasm' \
     --without-node-code-cache \
     --without-node-snapshot \
     --without-amaro \
@@ -98,7 +98,7 @@ build_for_arm64_simulator() {
     --cross-compiling \
     --enable-static \
     --openssl-no-asm \
-    --v8-options=--jitless \
+    --v8-options='--jitless --noexpose-wasm' \
     --without-node-code-cache \
     --without-node-snapshot \
     --ios-simulator \
@@ -128,7 +128,7 @@ build_for_x64_simulator() {
     --cross-compiling \
     --enable-static \
     --openssl-no-asm \
-    --v8-options=--jitless \
+    --v8-options='--jitless --noexpose-wasm' \
     --without-node-code-cache \
     --without-node-snapshot \
     --without-amaro \
