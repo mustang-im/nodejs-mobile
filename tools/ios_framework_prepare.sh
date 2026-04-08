@@ -36,7 +36,6 @@ declare -a outputs_common=(
   "libopenssl.a"
   "libsimdjson.a"
   "libsimdutf.a"
-  "libsqlite.a"
   "libuv.a"
   "libuvwasi.a"
   "libv8_base_without_compiler.a"
@@ -72,7 +71,13 @@ build_for_arm64_device() {
     --openssl-no-asm \
     --v8-options=--jitless \
     --without-node-code-cache \
-    --without-node-snapshot
+    --without-node-snapshot \
+    --without-amaro \
+    --without-npm \
+    --without-corepack \
+    --without-sqlite \
+    --without-inspector \
+    --v8-lite-mode
   make -j$(getconf _NPROCESSORS_ONLN)
 
   # Move compilation outputs
@@ -96,7 +101,13 @@ build_for_arm64_simulator() {
     --v8-options=--jitless \
     --without-node-code-cache \
     --without-node-snapshot \
-    --ios-simulator
+    --ios-simulator \
+    --without-amaro \
+    --without-npm \
+    --without-corepack \
+    --without-sqlite \
+    --without-inspector \
+    --v8-lite-mode
   make -j$(getconf _NPROCESSORS_ONLN)
 
   # Move compilation outputs
@@ -119,7 +130,13 @@ build_for_x64_simulator() {
     --openssl-no-asm \
     --v8-options=--jitless \
     --without-node-code-cache \
-    --without-node-snapshot
+    --without-node-snapshot \
+    --without-amaro \
+    --without-npm \
+    --without-corepack \
+    --without-sqlite \
+    --without-inspector \
+    --v8-lite-mode
   arch -x86_64 make -j$(getconf _NPROCESSORS_ONLN)
 
   # Move compilation outputs
