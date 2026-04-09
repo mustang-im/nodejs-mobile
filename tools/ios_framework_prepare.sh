@@ -48,13 +48,10 @@ declare -a outputs_common=(
   "libv8_snapshot.a"
   "libv8_zlib.a"
   "libhighway.a"
-  "libzlib.a"
   "libzstd.a"
 )
 declare -a outputs_x64_only=()
-declare -a outputs_arm64_only=(
-  "libzlib_data_chunk_simd.a"
-)
+declare -a outputs_arm64_only=()
 
 declare -a outputs_x64=("${outputs_common[@]}" "${outputs_x64_only[@]}")
 declare -a outputs_arm64=("${outputs_common[@]}" "${outputs_arm64_only[@]}")
@@ -78,7 +75,8 @@ build_for_arm64_device() {
     --without-corepack \
     --without-sqlite \
     --without-inspector \
-    --v8-lite-mode
+    --v8-lite-mode \
+    --shared-zlib
   make -j$(getconf _NPROCESSORS_ONLN)
 
   # Move compilation outputs
@@ -108,7 +106,8 @@ build_for_arm64_simulator() {
     --without-corepack \
     --without-sqlite \
     --without-inspector \
-    --v8-lite-mode
+    --v8-lite-mode \
+    --shared-zlib
   make -j$(getconf _NPROCESSORS_ONLN)
 
   # Move compilation outputs
@@ -137,7 +136,8 @@ build_for_x64_simulator() {
     --without-corepack \
     --without-sqlite \
     --without-inspector \
-    --v8-lite-mode
+    --v8-lite-mode \
+    --shared-zlib
   arch -x86_64 make -j$(getconf _NPROCESSORS_ONLN)
 
   # Move compilation outputs
