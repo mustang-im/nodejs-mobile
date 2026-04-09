@@ -78,4 +78,4 @@ GYP_DEFINES += " android_ndk_sysroot=" + toolchain_path + "/sysroot"
 os.environ['GYP_DEFINES'] = GYP_DEFINES
 
 if os.path.exists("./configure"):
-    os.system("./configure --dest-cpu=" + DEST_CPU + " --dest-os=android --openssl-no-asm --with-intl=small-icu --cross-compiling --shared --without-amaro --without-npm --without-corepack --without-sqlite --without-inspector --v8-lite-mode")
+    os.system("./configure --dest-cpu=" + DEST_CPU + " --dest-os=android --openssl-no-asm --with-intl=small-icu --cross-compiling --shared --without-amaro --without-npm --without-corepack --without-sqlite --without-inspector --v8-lite-mode --shared-zlib --without-node-snapshot --without-node-code-cache")
