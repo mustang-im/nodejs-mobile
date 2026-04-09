@@ -33,18 +33,18 @@
 		A36729002E53580A004DF2FB /* libv8_snapshot.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 33300EC1240437AB0019E302 /* libv8_snapshot.a */; };
 		A36729012E53580A004DF2FB /* libv8_zlib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F63BCE7E29756DCD0049F595 /* libv8_zlib.a */; };
 		A36729042E53580A004DF2FB /* libzstd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A36728BC2E530EF7004DF2FB /* libzstd.a */; };
-		A36729052E53580A004DF2FB /* libicudata.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A36729052E53580A004DF2FB /* libicudata.a */; };
-		A36729062E53580A004DF2FB /* libicui18n.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A36729062E53580A004DF2FB /* libicui18n.a */; };
-		A36729072E53580A004DF2FB /* libicuucx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A36729072E53580A004DF2FB /* libicuucx.a */; };
-		A36729082E53580A004DF2FB /* libicustubdata.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A36729082E53580A004DF2FB /* libicustubdata.a */; };
+		A36729052E53580A004DF2FB /* libicudata.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A3672A052E53580A004DF2FB /* libicudata.a */; };
+		A36729062E53580A004DF2FB /* libicui18n.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A3672A062E53580A004DF2FB /* libicui18n.a */; };
+		A36729072E53580A004DF2FB /* libicuucx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A3672A072E53580A004DF2FB /* libicuucx.a */; };
+		A36729082E53580A004DF2FB /* libicustubdata.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A3672A082E53580A004DF2FB /* libicustubdata.a */; };
 		D9A7619D1F7C63A8006AFE86 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 331917C21EC4702A00F93D52 /* CoreFoundation.framework */; };
-		A36729092E53580A004DF2FB /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A36729092E53580A004DF2FB /* libz.tbd */; };
+		A36729092E53580A004DF2FB /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A3672A092E53580A004DF2FB /* libz.tbd */; };
 		D9A762281F7C675E006097B1 /* NodeMobile.h in Headers */ = {isa = PBXBuildFile; fileRef = D9A762261F7C674F006097B1 /* NodeMobile.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		331917C21EC4702A00F93D52 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
-		A36729092E53580A004DF2FB /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		A3672A092E53580A004DF2FB /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		33300EAB240437620019E302 /* libhistogram.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libhistogram.a; path = bin/libhistogram.a; sourceTree = "<group>"; };
 		33300EAC240437620019E302 /* libllhttp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libllhttp.a; path = bin/libllhttp.a; sourceTree = "<group>"; };
 		33300EAD240437620019E302 /* libv8_initializers.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libv8_initializers.a; path = bin/libv8_initializers.a; sourceTree = "<group>"; };
@@ -67,10 +67,10 @@
 		A36728BF2E530EF7004DF2FB /* libabseil.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libabseil.a; path = bin/libabseil.a; sourceTree = "<group>"; };
 		A36728C02E530EF7004DF2FB /* libnbytes.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libnbytes.a; path = bin/libnbytes.a; sourceTree = "<group>"; };
 		A36728C12E530EF7004DF2FB /* libncrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libncrypto.a; path = bin/libncrypto.a; sourceTree = "<group>"; };
-		A36729052E53580A004DF2FB /* libicudata.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libicudata.a; path = bin/libicudata.a; sourceTree = "<group>"; };
-		A36729062E53580A004DF2FB /* libicui18n.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libicui18n.a; path = bin/libicui18n.a; sourceTree = "<group>"; };
-		A36729072E53580A004DF2FB /* libicuucx.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libicuucx.a; path = bin/libicuucx.a; sourceTree = "<group>"; };
-		A36729082E53580A004DF2FB /* libicustubdata.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libicustubdata.a; path = bin/libicustubdata.a; sourceTree = "<group>"; };
+		A3672A052E53580A004DF2FB /* libicudata.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libicudata.a; path = bin/libicudata.a; sourceTree = "<group>"; };
+		A3672A062E53580A004DF2FB /* libicui18n.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libicui18n.a; path = bin/libicui18n.a; sourceTree = "<group>"; };
+		A3672A072E53580A004DF2FB /* libicuucx.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libicuucx.a; path = bin/libicuucx.a; sourceTree = "<group>"; };
+		A3672A082E53580A004DF2FB /* libicustubdata.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libicustubdata.a; path = bin/libicustubdata.a; sourceTree = "<group>"; };
 		A36728C62E5355E5004DF2FB /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
 		D9A761AE1F7C63A8006AFE86 /* NodeMobile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NodeMobile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9A762251F7C674F006097B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -145,10 +145,10 @@
 				A36728C62E5355E5004DF2FB /* Security.framework */,
 				A36728BF2E530EF7004DF2FB /* libabseil.a */,
 				A36728BD2E530EF7004DF2FB /* libhighway.a */,
-				A36729052E53580A004DF2FB /* libicudata.a */,
-				A36729062E53580A004DF2FB /* libicui18n.a */,
-				A36729072E53580A004DF2FB /* libicuucx.a */,
-				A36729082E53580A004DF2FB /* libicustubdata.a */,
+				A3672A052E53580A004DF2FB /* libicudata.a */,
+				A3672A062E53580A004DF2FB /* libicui18n.a */,
+				A3672A072E53580A004DF2FB /* libicuucx.a */,
+				A3672A082E53580A004DF2FB /* libicustubdata.a */,
 				A36728C02E530EF7004DF2FB /* libnbytes.a */,
 				A36728C12E530EF7004DF2FB /* libncrypto.a */,
 				A36728BA2E530EF7004DF2FB /* libsimdjson.a */,
@@ -172,7 +172,7 @@
 				33300EC1240437AB0019E302 /* libv8_snapshot.a */,
 				F63BCE7E29756DCD0049F595 /* libv8_zlib.a */,
 				331917C21EC4702A00F93D52 /* CoreFoundation.framework */,
-				A36729092E53580A004DF2FB /* libz.tbd */,
+				A3672A092E53580A004DF2FB /* libz.tbd */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
