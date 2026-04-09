@@ -79,7 +79,9 @@ jobs:
           sudo rm -rf /Library/Frameworks/Xamarin.Android.framework
           sudo rm -rf /Users/runner/Library/Android
           sudo rm -rf /usr/local/share/powershell
-          sudo find /Applications -type d -name "Xcode.app" ! -name "Xcode.app" -prune -exec rm -rf "{}" \;
+          sudo rm -rf /usr/local/share/dotnet
+          sudo rm -rf /usr/local/lib/node_modules
+          sudo find /Applications -maxdepth 1 -name "Xcode_*.app" ! -name "Xcode_16.4.app" -exec rm -rf "{}" \;
 
       - uses: actions/checkout@v4
         with:

@@ -74,6 +74,7 @@ build_for_arm64_device() {
     --v8-lite-mode \
     --shared-zlib
   make -j$(getconf _NPROCESSORS_ONLN)
+  rm -rf out/Release/obj.target
 
   # Move compilation outputs
   mkdir -p $TARGET_LIBRARY_PATH/arm64-device
@@ -105,6 +106,7 @@ build_for_arm64_simulator() {
     --v8-lite-mode \
     --shared-zlib
   make -j$(getconf _NPROCESSORS_ONLN)
+  rm -rf out/Release/obj.target
 
   # Move compilation outputs
   mkdir -p $TARGET_LIBRARY_PATH/arm64-simulator
@@ -135,6 +137,7 @@ build_for_x64_simulator() {
     --v8-lite-mode \
     --shared-zlib
   arch -x86_64 make -j$(getconf _NPROCESSORS_ONLN)
+  rm -rf out/Release/obj.target
 
   # Move compilation outputs
   mkdir -p $TARGET_LIBRARY_PATH/x64-simulator
